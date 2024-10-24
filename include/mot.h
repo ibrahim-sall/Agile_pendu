@@ -5,11 +5,11 @@ class mot {
     public:
         mot();
 
-        mot(string mot);
+        mot(string word);
         
         ~mot();
 
-        void set(string mot);
+        void set(string word);
 
         string get();
 
@@ -21,6 +21,6 @@ class mot {
     protected:
         int word_length = 0;
         std::list<int> lettre_trouvees;
-        string mot;
+        string word;
 
 }
