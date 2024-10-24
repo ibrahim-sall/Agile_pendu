@@ -41,7 +41,7 @@ void verifyInput(char guess) //vérifier si la lettre est dans le mot
     }
     else
     {
-        Game::Envoi_erreur(guess)
+        Envoi_erreur(guess)
     }
     
     cout << "Le mot current est: " << currentGuessState << endl;
