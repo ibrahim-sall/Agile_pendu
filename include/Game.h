@@ -11,7 +11,10 @@ public :
     }
 
     void Game::envoi_erreur(char lettre_proposée);
+
     void Game::envoi_reussite(char lettre_proposée);
+
+    void Game::affichage();
 
 
 private:
