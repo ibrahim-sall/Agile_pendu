@@ -2,9 +2,11 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
 
 string wordToGuess = "mot"; //à modifier
 string currentGuessState;
+vector<char> list_input;
 
 void initializeGame()
 {
@@ -21,13 +23,31 @@ char playerInput()
     return guess;
 }
 
-void playerRight(bool )
+void verifyInput(char guess) //vérifier si la lettre est dans le mot
 {
-    cout << "Félicitation, c'est correct ";
+    bool found = false;
+    for (int i=0; i<wordToGuess.size(); i++)
+    {
+        if (wordToGuess[i] == guess)
+        {   
+            currentGuessState[i] = guess;
+            found = true;
+        }
+    }
 
+    if (found)
+    {
+        Game::Envoi_réussite(guess)
+    }
+    else
+    {
+        Game::Envoi_erreur(guess)
+    }
+    
+    cout << "Le mot current est: " << currentGuessState << endl;
 }
 
-void Game::Envoi_erreur(char lettre_proposée){
+void Envoi_erreur(char lettre_proposée){
     std::cout<<"La lettre proposée n'est pas dans le mot";
     liste_input.push_back(lettre_proposée);
 }
