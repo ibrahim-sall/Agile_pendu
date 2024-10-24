@@ -34,3 +34,6 @@ void mot::update(int lettre_ind){
 std::list<int> get_list(){
     return lettre_trouvees;
 }
+int mot::get_word_length(){
+    return word_length;
+}

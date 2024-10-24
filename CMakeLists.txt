@@ -1,5 +1,10 @@
-cmake_minimum_required(VERSION 3.5.0)
-project(pendu VERSION 0.1.0 LANGUAGES C CXX)
+cmake_minimum_required(VERSION 3.10)
 
-add_executable(pendu main.cpp)
+# Set the project name
+project(AgilePendu)
 
+# Add the executable
+add_executable(AgilePendu main.cpp)
+
+# Include directories
+include_directories(${CMAKE_SOURCE_DIR}/include)

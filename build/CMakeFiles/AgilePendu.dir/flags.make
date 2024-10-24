@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/include
+CXX_INCLUDES = -I/home/formation/Documents/Agile/Agile_pendu/include
 
 CXX_FLAGS = -g
 
