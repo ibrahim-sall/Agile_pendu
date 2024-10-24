@@ -1,5 +1,5 @@
 #include <string>
-#include <list>
+#include <vector>
 
 class mot {
     public:
@@ -8,8 +8,6 @@ class mot {
         mot(string word);
         
         ~mot();
-
-        void set(string word);
 
         string get();
 
@@ -20,7 +18,7 @@ class mot {
 
     protected:
         int word_length = 0;
-        std::list<int> lettre_trouvees;
+        std::vector<int> lettre_trouvees;
         string word;
 
 }

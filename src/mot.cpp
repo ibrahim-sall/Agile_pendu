@@ -18,3 +18,19 @@ mot::mot(string word){
         lettre_trouvees.push_back(0);
     }
 }
+
+mot::~mot(){
+    lettre_trouvees.clear();
+}
+
+std::string mot::get(){
+    return word;
+}
+
+void mot::update(int lettre_ind){
+    lettre_trouvees[lettre_ind] = 1;
+}
+
+std::list<int> get_list(){
+    return lettre_trouvees;
+}
