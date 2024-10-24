@@ -1,4 +1,4 @@
-#include "joueur.h"
+#include "../include/joueur.h"
 #include <iostream>
 #include <vector>
 
@@ -6,17 +6,15 @@
 
 Joueur::Joueur()
 {
-    std::string name;
     std::vector<int> listeScore;
+    Joueur::nom = "Joueur 1";
+    Joueur::listScore = listeScore;
+}
 
+Joueur::Joueur(std::string name)
+{
 
-    std::cout << "Saisir le nom du joueur : ";
-
-
-    std::getline(std::cin, name);
-
-    std::cout << "Le nom du joueur est : " << nom << std::endl;
-
+    std::vector<int> listeScore;
     Joueur::nom = name;
     Joueur::listScore = listeScore;
 }
