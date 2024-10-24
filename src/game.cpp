@@ -4,7 +4,7 @@
 
 using namespace std;
 
-string wordToGuess = "mot"; //à modifier
+string wordToGuess = "givemeaword"; //à modifier
 string currentGuessState;
 vector<char> list_input;
 
@@ -15,7 +15,7 @@ void initializeGame()
     cout << "Le mot à deviner est: " << currentGuessState << endl;
 }
 
-char playerInput() 
+char playerInput()
 {
     char guess;
     cout << "Devinez une lettre: ";
