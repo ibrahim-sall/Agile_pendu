@@ -7,6 +7,7 @@ class Joueur
 {
 public:
     Joueur();
+    Joueur(std::string name);
     std::string nom;
     std::vector<int> listScore;
 
