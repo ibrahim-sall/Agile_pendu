@@ -37,7 +37,7 @@ void verifyInput(char guess) //vérifier si la lettre est dans le mot
 
     if (found)
     {
-        Game::Envoi_réussite(guess)
+        Envoi_réussite(guess)
     }
     else
     {
