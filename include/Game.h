@@ -1,12 +1,14 @@
 #include "Mot.h"
+#include <list>
 
 class Game{
 public :
+    
 
 private:
     int nombre_de_vies;
     Mot mot_secret;
-    List<int> indice_trouve;
-    List<char> liste_input;
+    std::list<int> indice_trouve;
+    std::list<char> liste_input;
     
 };
